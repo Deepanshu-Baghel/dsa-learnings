@@ -61,8 +61,37 @@ public class main {
         }
     } 
 
+    public static void pattern30 (int n){
+	    for(int row = 1 ; row <= n ; row++){
+		    for (int space = 1 ; space <= n-row ; space++){
+		        System.out.print(" ");
+		    }
+		    for(int col = row ; col>=1 ;col--){
+		        System.out.print(col);
+		    }
+		    for(int col = 2 ; col<=row ;col++){
+		        System.out.print(col);
+		    }
+		    System.out.println();
+		}	
+	}
 
-
+    public static void pattern17 (int n){
+	    for(int row = 1 ; row <= 2*n-1 ; row++){
+	        
+	        int totalcols = row > n ? 2*n-row : row;  // i mistake the 2n-row by 2n-1 
+		    for (int space = 1 ; space <= n-totalcols ; space++){
+		        System.out.print(" ");
+		    }
+		    for(int col = totalcols ; col>=1 ;col--){
+		        System.out.print(col);
+		    }
+		    for(int col = 2 ; col<=totalcols ;col++){
+		        System.out.print(col);
+		    }
+		    System.out.println();
+		}
+	}
 
 
 
