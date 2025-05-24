@@ -16,7 +16,15 @@ public class main {
         }
     }
 
-
+    static void pattern3 (int n){
+        for (int row = 1 ; row <= n ; row++){           
+            for (int col =1 ; col<=n-row+1; col++){                 // 1-5
+                System.out.print("*");                            // 2-4
+                                                                    // 3-3
+            }
+            System.out.println();
+        }
+    }
 
 
 
